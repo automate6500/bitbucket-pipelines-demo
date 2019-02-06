@@ -8,6 +8,7 @@ pipelines:
           - pip
         script:
           # Requirements (Stage 1)
+          # trigger the build
           - pip install --upgrade --requirement requirements.txt
           # Check (Stage 2)
           - flake8 --ignore=E501,E231
